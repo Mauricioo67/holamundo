@@ -2,37 +2,52 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background-color: #f0f8ff;
-    transition: background-color 0.5s ease;
     margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente colorido como fondo base */
+    color: #333; /* Texto principal en gris oscuro */
+    transition: background 0.5s ease;
+    min-height: 100vh;
 }
 
 h1 {
-    color: #333;
+    color: #ff6b6b; /* Rojo rosado vibrante para el título */
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar */
+    font-size: 2.5em;
 }
 
 p {
-    color: #666;
+    color: #4ecdc4; /* Turquesa para el párrafo */
     font-size: 18px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 button {
     padding: 15px 25px;
     font-size: 18px;
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 100%); /* Gradiente rosado en el botón */
+    color: #333; /* Texto oscuro para contraste */
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
 }
 
 button:hover {
-    background-color: #45a049;
+    background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%); /* Gradiente turquesa-rosado al hover */
+    transform: translateY(-2px); /* Elevación sutil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
     transform: scale(0.98);
 }
+
+/* Colores aleatorios para el cambio de fondo (agregué más para variedad) */
+body.color-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+body.color-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+body.color-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+body.color-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+body.color-5 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
